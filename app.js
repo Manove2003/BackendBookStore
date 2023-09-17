@@ -8,6 +8,11 @@ require("./connection/connection")
 app.use(express.json());
 app.use(cors())
 app.use("/api/v1",bookRoutes);
+app.get("/" , (req , res)=>{
+    res.json({
+        message : "Working Successfully"
+    })
+})
 app.listen(process.env.PORT || 1004,()=>{
     console.log("SERVER STARTED SUCCESSFULLY");
 });
