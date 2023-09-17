@@ -10,7 +10,7 @@ app.use(cors())
 app.use("/api/v1",bookRoutes);
 app.get("/" , (req , res)=>{
     res.json({
-        message : "Working Successfully"
+        message : "Working Success"
     })
 })
 app.listen(process.env.PORT || 1004,()=>{
